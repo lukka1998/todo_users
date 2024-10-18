@@ -54,9 +54,3 @@ main();
 document.querySelector(".button").addEventListener("click" ,function(){
     document.querySelector(".item").style.display = "none"
 } );
-async function deletetodos(todoId){
-    //axios do not work on the api when use delete method
-    axios.delete(`https://app-servers.io/api/todos/delete/${todoId}`,)
-     let todos = await getAlltodos();
-     renderhtml(todos);
-}
